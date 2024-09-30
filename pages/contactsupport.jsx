@@ -10,12 +10,10 @@ const ContactSupport = () => {
       <div className={styles.contactSupportContainer}>
           
           <header className={styles.header}>
-              <div className={styles.backIcon} onClick={() => router.back()}>
+        {/* Back Button */}
+      <div className={styles.backIcon}  onClick={() => window.history.back()}>
         <FaArrowLeft />
       </div>
-        <button className={styles.backBtn} onClick={() => window.history.back()}>
-          &#8592;
-        </button>
         <h2>Contact Support</h2>
       </header>
 
