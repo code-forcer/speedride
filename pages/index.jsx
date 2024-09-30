@@ -23,6 +23,8 @@ const AllPages = () => {
         { href: "/setpassword", label: "Set Password" },
         { href: "/signup", label: "Sign Up" },
         { href: "/welcomeshow", label: "Landing page" },
+        
+        { href: "/contactsupport", label: "Contact support page" },
         { href: "/driverinfo", label: "Driver info page" },
         { href: "/chat", label: "Chat flow page" },
          { href: "/faq", label: "Faq  page" },
