@@ -1,0 +1,42 @@
+/* styles/Example.module.css */
+
+.container {
+    position: relative;
+    height: 100vh;
+    /* Full height for the page */
+}
+
+.mapBackground {
+    background-image: url('/img/map 1.svg');
+    /* Placeholder for your map background image */
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* Align the form card to the bottom */
+    padding: 20px;
+}
+
+.formCard {
+    background:white;
+    /* Semi-transparent white background */
+    padding: 20px;
+    border-bottom: none;
+    border-top-right-radius:10px;
+    border-top-left-radius:10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.formCard h4 {
+    margin-bottom:5px;
+    font-weight: bold;
+}
+
+.formCard input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

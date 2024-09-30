@@ -1,0 +1,90 @@
+/* Styling for the FAQ page */
+
+.faqContainer {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.backIcon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+
+.header h2 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.faqList {
+    margin-top: 20px;
+}
+
+.faqItem {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.faqQuestion {
+    padding: 15px;
+    background-color: #f1f1f1;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.faqQuestion:hover {
+    background-color: #e2e2e2;
+}
+
+.faqAnswer {
+    padding: 10px 15px;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
+    border-top: 1px solid #ddd;
+}
+
+.icon {
+    font-size: 20px;
+    color: #555;
+}
+
+.faqContainer ul {
+    margin-top: 10px;
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.faqContainer ul li {
+    margin-bottom: 5px;
+    font-size: 14px;
+}

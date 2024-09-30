@@ -1,0 +1,87 @@
+/* styles/OTPVerification.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* OTP Input Container */
+.otpContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.otpInput {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+}
+
+.resendText {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.resendLink {
+    color: #1EC40A;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.resendLink:hover {
+    color: #2a1b97;
+}
+
+/* Verify Button */
+.verifyButton {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #1EC40A;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.verifyButton:hover {
+    background-color: #4b33c8;
+}
+
+/* Mobile Styling */
+@media (max-width: 600px) {
+    .otpInput {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+
+    .verifyButton {
+        font-size: 16px;
+    }
+}

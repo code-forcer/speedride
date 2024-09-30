@@ -1,0 +1,145 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+    color: #000;
+}
+
+/* First div: Logo and background image */
+.logoContainer {
+    width: 100%;
+    height: 90vh;
+    /* Adjust to occupy the top half of the screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/img/hero.svg');
+    /* Background image */
+    background-size: cover;
+    margin-top: -10%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.logoContainer {
+    display: flex;
+    flex-direction: column;
+    /* Stack the images vertically */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* Space between the images */
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 100px;
+    /* Adjust the size of the images */
+    height: auto;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 600px) {
+    .logo {
+        width: 80px;
+        /* Smaller size for mobile */
+    }
+}
+/* Second div: Welcome text and arrow icon */
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top:5px;
+}
+
+.textContainer h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.textContainer p {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 600px;
+    /* Limit text width for readability */
+}
+.nextPageArrow {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: #1EC40A;
+    /* Background color for the circle */
+    border-radius: 50%;
+    /* Make the container circular */
+    cursor: pointer;
+    box-shadow: 0 0 15px #1EC40A;
+    /* Glow effect */
+    border: 1px solid #333;
+    outline: 1px solid #333;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.nextPageArrow:hover {
+    /* Brighter glow on hover */
+    transform: scale(1.1);
+    /* Slightly increase size on hover */
+}
+/* Mobile-specific adjustments */
+@media (max-width: 600px) {
+    .logoContainer {
+        height: 80vh;
+        margin-top: -60%;
+        /* Slightly smaller height on mobile */
+    }
+
+    .logoContainer img {
+        width: 100px;
+        /* Reduce logo size */
+    }
+
+    .textContainer h1 {
+        font-size: 25px;
+        
+        font-weight: bold;
+    }
+
+    .textContainer p {
+        font-size: 14px;
+    }
+
+    .nextPageArrow img {
+        width: 30px;
+        /* Smaller arrow icon */
+    }
+}
+
+/* Larger screen adjustments */
+@media (min-width: 1024px) {
+
+    .logoContainer img {
+        width: 200px;
+        /* Larger logo on bigger screens */
+    }
+
+    .textContainer h1 {
+        font-size: 36px;
+    }
+
+    .textContainer p {
+        font-size: 18px;
+    }
+
+    .nextPageArrow img {
+        width: 30px;
+        /* Larger arrow icon */
+    }
+}

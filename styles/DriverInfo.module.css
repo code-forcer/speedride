@@ -1,0 +1,138 @@
+/* styles/DriverInfo.module.css */
+
+.container {
+    padding: 20px;
+    color: #000;
+    font-family: Arial, sans-serif;
+}
+
+.backIcon {
+    cursor: pointer;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.jumbotron {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.driverImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.jumbotron h2 {
+    margin-bottom: 5px;
+}
+
+.phoneNumber {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.copyIcon {
+    margin-left: 10px;
+    cursor: pointer;
+    color: #333;
+}
+
+.statsJumbotron {
+    display: flex;
+    justify-content: space-around;
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.statsItem {
+    text-align: center;
+}
+
+.statsItem p {
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.statsItem span {
+    font-size: 14px;
+    color: #555;
+}
+
+.starIcon {
+    color: #ffc107;
+    font-size: 24px;
+}
+
+.details {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.details p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.actionButtons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.icon{
+    border: 1px solid #000;
+    padding: 5px;
+    background-color: #1EC40A33;
+    border-radius: 50px;
+}
+.callButton,
+.chatButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.callButton {
+    background-color: #fff;
+    border-radius: 25px;
+    border: 1px solid #1CE40A;
+    color: #000;
+}
+
+.chatButton {
+    color: white;
+    background-color: #1CE40A;
+    border-radius: 25px;
+}
+
+.callButton:hover {
+    background-color: #218838;
+}
+
+.chatButton:hover {
+    background-color: #0056b3;
+}
+.floatright{
+    float: right;
+    font-weight: bold;
+}

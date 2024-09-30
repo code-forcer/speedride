@@ -1,0 +1,46 @@
+/* styles/page.module.css */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #333;
+    width: 100%;
+    background-color: #fff;
+    /* Stick to the bottom of the page */
+    bottom: 0;
+}
+
+.icon {
+    margin: 0 15px;
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    color: #0070f3;
+    /* Change color on hover */
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .footer {
+        padding: 15px;
+    }
+
+    .icon {
+        font-size: 20px;
+        margin: 0 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .icon {
+        font-size: 28px;
+    }
+}

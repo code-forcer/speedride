@@ -1,0 +1,159 @@
+/* styles/Profile.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+/* Profile image container with status dot */
+.profileImageContainer {
+    position: relative;
+    display: inline-block;
+}
+
+.profileImage {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #ccc;
+}
+
+/* Status dot */
+.statusDot {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid white;
+    /* Border to separate dot from image */
+}
+
+/* Online status */
+.online {
+    background-color: #4CAF50;
+    /* Green for online */
+}
+
+/* Offline status */
+.offline {
+    background-color: #FF0000;
+    /* Red for offline */
+}
+.inputContainer {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.inputContainer label {
+    display: block;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.inputContainer input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+}
+
+/* PhoneInput styling */
+.phoneInput {
+    width: 100% !important;
+    padding: 25px !important;
+    background-color: #fff !important;
+    font-size: 20px !important;
+    border: 1px solid #1ec40a !important;
+    border-radius: 5px !important;
+    margin-bottom: 10px;
+}
+
+/* Gender selection */
+.genderContainer {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.genderContainer label{
+    text-align: center;    
+}
+.genderOptions {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.genderLabel {
+    font-size:20px;
+    padding: 5px;
+}
+
+/* Button styles */
+.buttonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cancelButton,
+.saveButton {
+    padding: 12px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cancelButton {
+    background-color: #fff;
+    color: #000;
+    border:2px solid #1EC40A;
+}
+
+.cancelButton:hover {
+    background-color: #bbb;
+}
+
+.saveButton {
+    background-color: #1EC40A;
+    color: white;
+}
+
+.saveButton:hover {
+    background-color: #2c1aa1;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+    .genderOptions {
+        display: flex;padding: 5px;
+    }
+
+    .buttonContainer {
+        display: flex;
+    }
+
+    .cancelButton,
+    .saveButton {
+        width: 30%;
+        border-radius: 25px;
+        margin-bottom: 10px;
+    }
+}
